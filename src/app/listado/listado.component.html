@@ -1,19 +1,31 @@
-<div class="card centered">
+<h2 class="text-center text-white">Listado de Peliculas</h2>
+<div class="row">
+  <div class="col-3"> </div>
+<div class="col-6">
+  <div class="card mt-5 centered">
     <div class="card-body text-center">
-      <h2>Listado de Peliculas</h2> 
-      <div class="card text-center">
-        <div>
-          <label>Pelicula: </label> 
-          <input type="text" placeholder="Nombre de la pelicula" [(ngModel)]="movie.titulo">
-        </div>
-        <div>
-          <label>Calificación:</label> <input type="text"  placeholder="Calificación" [(ngModel)]="movie.calificacion"> / 10
-        </div>
-        <div>
-          <label>Pais:</label> <input type="text" placeholder="Calificación" [(ngModel)]="movie.pais">
-          </div>
-        
+      <div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item text-left p-1 m-1" *ngFor="let movie of movies">
+            <div class="row">
+              <div class="col-8">
+                <ul>
+                  <li><b>Pelicula:</b> {{movie.titulo}}</li>
+                  <li><b>Calificación:</b> {{movie.calificacion}} /10</li>
+                  <li>Pais: {{movie.pais}}</li>
+                </ul>
+                </div>
+                <div class="col-4 align-self-end">
+                  <button type="button" class="btn btn-danger btn-lg btn-block">Borrar</button>
+                  <button type="button" class="btn btn-info btn-block">Editar</button>
+                </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
-    
   </div>
+</div>
+</div>
+
+
