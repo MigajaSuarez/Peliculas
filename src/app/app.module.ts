@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -13,6 +12,7 @@ import { IntroComponent } from './intro/intro.component';
 import { ListadoComponent } from './listado/listado.component';
 import { BuscarComponent } from './buscar/buscar.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +22,8 @@ import { BuscarComponent } from './buscar/buscar.component';
     ContentComponent,
     IntroComponent,
     ListadoComponent,
-    BuscarComponent
+    BuscarComponent,
+
   ],
   imports: [
     BrowserModule,

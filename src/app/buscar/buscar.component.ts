@@ -1,3 +1,4 @@
+// Componente para buscar peliculas
 import { Component, OnInit } from '@angular/core';
 
 @Component({

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+//Componente que muestra el listado de peliculas
+
+import { Component, HostListener, OnInit } from '@angular/core';
 import {MOVIES} from './../movies/mock-movies';
 @Component({
   selector: 'app-listado',
@@ -6,12 +8,18 @@ import {MOVIES} from './../movies/mock-movies';
   styleUrls: ['./listado.component.css']
 })
 export class ListadoComponent implements OnInit {
-movies= MOVIES;
+  movies= MOVIES;
+
 
 
   constructor() { }
 
   ngOnInit(): void {
   }
+  
+// funcionalidad de borrar pelicula
+  deleteMovie(){
 
+  }
 }
+

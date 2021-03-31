@@ -1,7 +1,8 @@
-<h2 class="text-center text-white m-5">Listado de Peliculas</h2>
+<!-- Componente que muestra el listado de peliculas -->
+<h2 class="text-center text-white m-5 m-sm-1">Listado de Peliculas</h2>
 <div class="row">
-  <div class="col-sm-1 col-md-2 col-lg-3"> </div>
-<div class="col-sm-10 col-md-8 col-lg-6">
+  <div class="col-sm-0 col-md-1 col-lg-2"> </div>
+<div class="col-sm-12 col-md-10 col-lg-8">
   <div class="card centered">
     <div class="card-body text-center">
       <div>
@@ -22,10 +23,29 @@
             </div>
           </li>
         </ul>
+        
+      </div>
+
+<!-- Funcionalidad de agregar peliculas -->
+        <div class="container centered">
+          <div class="row">
+            <div class="col-12 py-3"><h3>Agregar Pelicula</h3></div>
+            <div class="col-md-6 col-lg-4 px-1">
+              <span><b>Nombre</b><br><input class="formi"type="text" placeholder="titulo..."></span>
+            </div>
+            <div class="col-md-6 col-lg-4 px-1">
+                <span><b>Calificación</b><br><input class="formi" type="text" placeholder="de 1 a 10..."></span>
+            </div>
+            <div class="col-md-6 col-lg-4 px-1">
+                <span><b>País</b><br><input class="formi" type="text" placeholder="País..."></span>
+            </div>
+          </div>
+          <button class="btn btn-primary mt-3">Agregar</button>
+        </div>
       </div>
     </div>
   </div>
 </div>
-</div>
+
 
 

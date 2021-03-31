@@ -4,9 +4,13 @@
     border-radius: 1em;
     background: rgba(255, 255, 255, 0.925);
     line-height: 1.5;
+    overflow-x: auto;
     
 }
-
+.table{
+    overflow-x: scroll;
+    margin: auto;
+}
 li{
     font-size: 14px;
 }
