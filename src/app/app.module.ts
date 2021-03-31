@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContentComponent } from './content/content.component';
 import { IntroComponent } from './intro/intro.component';
 import { ListadoComponent } from './listado/listado.component';
+import { BuscarComponent } from './buscar/buscar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ListadoComponent } from './listado/listado.component';
     FooterComponent,
     ContentComponent,
     IntroComponent,
-    ListadoComponent
+    ListadoComponent,
+    BuscarComponent
   ],
   imports: [
     BrowserModule,
